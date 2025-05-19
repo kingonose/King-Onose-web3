@@ -1,0 +1,627 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0) 60%, rgb(6, 0, 83));
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite alternate;
+    color: white;
+    position: relative;
+}
+p{
+    font-size: 1.6rem;
+}
+.checkbox-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('mp.JPG'); /* Change to your checkbox pattern image */
+    opacity: 0.1; /* Adjust opacity as needed */
+    pointer-events: none; /* Prevent the pattern from intercepting clicks */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.link-button {
+    background-color: #434ed0; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    display: inline-block; /* Make the button inline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-left: 10px;
+}
+.link-button2 {
+    background-color: #434ed0; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the text */
+    display: inline-block; /* Make the button inline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-left: 10px;
+    position: absolute;
+}
+.link-button:hover {
+    background-color: #020e2b; 
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    gap:12rem;
+}
+.navigation ul li{
+    font-size: 1.5rem;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:white;
+    position: relative;
+}
+.navigation ul li a::after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color:white;
+    transform: scaleX(0);
+    transition:0.3s ease-in-out;
+}
+.navigation ul li a:hover::after{
+    transform:scaleX(1);
+}
+#ham{
+    display:none;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.welcome-text {
+    animation: slideIn 2s ease forwards;
+}
+
+.welcome-heading {
+    font-size: 3em; /* Increase the font size */
+}
+.right{
+    height:800px;
+}
+
+.image-frame {
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.dark-mode #dark-mode-toggle i::before {
+    content: "\f186"; /* Font Awesome icon for moon (dark mode) */
+}
+
+.light-mode #dark-mode-toggle i::before {
+    content: "\f185"; /* Font Awesome icon for sun (light mode) */
+}
+/* Your existing CSS styles (already added) */
+marquee{
+    background-color: rgb(255, 255, 255);
+}
+.bottom{
+    margin-bottom: 5px;
+}
+.bottom ul{
+     display: flex;
+     gap:100px;
+    
+     padding:10px 0px;
+     list-style: none;
+}
+.bottom ul li{
+    color:rgb(0, 0, 0);
+}
+.bottom ul li::before{
+    content:"\2022";
+    color:rgb(0, 13, 157);
+    font-weight: bolder;
+    display:inline-block;
+    width:2em;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.left p{
+    text-align: left;
+}
+.about-content .right {
+    flex: 1;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-content .service {
+    flex: 1;
+    text-align: center;
+}
+
+.services-content .service i {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.works-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-frame {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2); /* Placeholder frame color */
+    margin-bottom: 20px;
+}
+
+.work-frame.glow {
+    animation: glowAnimation 1s infinite alternate;
+}
+
+.section-content h2{
+    font-size: 50px;
+}
+.contact-content p{
+    text-align: left;
+    font-size: 1.4em;
+}
+.contacttext{
+    font-size: 5vh;
+}
+/* Your existing CSS styles (already added) */
+
+.section {
+    padding: 50px 20px;
+    
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.section-content h2{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+.section_content p{
+    text-align: center;
+    font-size: 3vh;
+}
+/* .section-content .info{
+    text-align: center;
+    font-size: 3vh;
+} */
+
+.services-content .service {
+    flex-basis: calc(50% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-content .service i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.works-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.work-frame {
+    width: calc(50% - 20px);
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2); /* Placeholder frame color */
+    margin-bottom: 20px;
+    border: 5px solid transparent;
+    transition: border-color 0.3s ease;
+    position: relative;
+}
+
+.work-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-frame:hover {
+    border-color:  #2196f3;
+}
+
+.work-frame.glow {
+    animation: glowAnimation 1s infinite alternate;
+}
+/* Social Media Floating Bar */
+.social-bar {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #181f2a;
+    border: 2.5px solid #2196f3;
+    border-radius: 18px;
+    padding: 12px 22px;
+    display: flex;
+    flex-direction: row; /* Make items horizontal */
+    align-items: center;
+    gap: 18px;
+    z-index: 1000;
+    box-shadow: 0 0 16px 4px #2196f3, 0 4px 16px rgba(0,0,0,0.2);
+    animation: glow-blue 1.5s infinite alternate;
+}
+
+@keyframes glow-blue {
+    from {
+        box-shadow: 0 0 16px 4px #2196f3, 0 4px 16px rgba(0,0,0,0.2);
+    }
+    to {
+        box-shadow: 0 0 32px 8px #2196f3, 0 4px 16px rgba(0,0,0,0.2);
+    }
+}
+
+.social-bar-title {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+
+.social-bar a {
+    color: #fff;
+    font-size: 1.7rem;
+    transition: color 0.2s;
+}
+
+.social-bar a:hover {
+    color: #2196f3;
+}
+
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 10px 2px  #2196f3;
+    }
+    100% {
+        box-shadow: 0 0 20px 5px  #2196f3;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    #ham{
+        display:block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .navigation{
+        display:none;
+    }
+    .show{
+        display:block;
+    }
+    .show ul{
+        flex-direction: column;
+        gap:10px;
+       
+    }
+    .show ul li{
+        font-size: 1rem;
+    }
+    .right{
+        width:300px;
+        height:350px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+/* Your existing CSS styles (already added) */
+
+/* Media query for tablets (768px) and above */
+@media screen and (min-width: 600px) {
+    .section {
+        padding: 100px 20px;
+    }
+
+    .welcome-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .welcome-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .image-frame {
+        width: 300px;
+        height: 300px;
+    }
+    .services-content .service {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .works-content .work-frame {
+        width: calc(50% - 20px);
+        height: 300px;
+    }
+    .right{
+        width:400px;
+        height:500px;
+    }
+    .navigation ul{
+        gap:4rem;
+    }
+    
+}
+
+/* Media query for desktops (1024px) and above */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 150px 20px;
+    }
+
+    .welcome-section {
+        flex-direction: row;
+    }
+
+    .welcome-text {
+        width: 50%;
+    }
+
+    .image-frame {
+        width: 400px;
+        height: 400px;
+    }
+
+    .services-content .service {
+        flex-basis: calc(25% - 20px);
+    }
+
+    .works-content .work-frame {
+        width: calc(33.33% - 20px);
+        height: 350px;
+    }
+}
+/* Your existing CSS styles (already added) */
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image-frame {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .services-content .service {
+        flex-basis: 100%;
+    }
+
+    .works-content .work-frame {
+        width: calc(50% - 20px);
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Media query for tablets (768px) and above */
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 50px 20px;
+    }
+
+    .welcome-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .welcome-text {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .image-frame {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    .services-content .service {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .works-content .work-frame {
+        width: calc(50% - 20px);
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for desktops (1024px) and above */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 100px 20px;
+    }
+
+    .welcome-section {
+        flex-direction: row;
+    }
+
+    .welcome-text {
+        width: 50%;
+    }
+
+    .image-frame {
+        width: 400px;
+        height: 400px;
+    }
+
+    .services-content .service {
+        flex-basis: calc(25% - 20px);
+    }
+
+    .works-content .work-frame {
+        width: calc(33.33% - 20px);
+        height: 350px;
+    }
+
+
+
+}
+/* Image Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.modal-content {
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 24px #2196f3;
+  margin: 0;
+  display: block;
+  object-fit: contain;
+  background: #222;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2100;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: color 0.2s;
+}
+.close:hover { color: #2196f3; }
+
+@media (max-width: 600px) {
+  .modal-content {
+    max-width: 98vw;
+    max-height: 60vh;
+  }
+  .close {
+    top: 8px;
+    right: 8px;
+    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
